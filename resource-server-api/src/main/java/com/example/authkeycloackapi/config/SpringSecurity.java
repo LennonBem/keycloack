@@ -32,7 +32,7 @@ public class SpringSecurity {
         http
                 .securityMatcher("/api/**")
                 .authorizeHttpRequests(authz -> authz
-                        .requestMatchers("/swagger-ui/**","/api/teste/publico").permitAll()
+                        .requestMatchers("/swagger-ui/**","/api/resources/public").permitAll()
                         .anyRequest().authenticated()
                 ).oauth2ResourceServer(oauth2 -> oauth2
                         .jwt(jwt -> jwt

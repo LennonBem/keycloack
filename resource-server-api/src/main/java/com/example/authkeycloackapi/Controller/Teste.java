@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 
@@ -24,7 +26,10 @@ public class Teste {
 
     @GetMapping("/public")
     String testeAcessoRecursoPublico(){
-        return "Endpoint público acessado com sucesso!";
+        Map<String,String> retornoBancodeDados = new HashMap<>();
+        retornoBancodeDados.put("id","1");
+        retornoBancodeDados.put("nome","Banco 1");
+        return "Olá Matheus! " + retornoBancodeDados;
     }
 
     @GetMapping("/private")
