@@ -55,6 +55,29 @@ Em vez disso:
 Neste projeto criei duas API's:
 
 resource-server-api: API que contem os recursos a serem solicitados pelos clientes.
+
+## Keycloak (Autenticação)
+
+Este projeto utiliza o **Keycloak** como servidor de autenticação.
+
+Você pode subir o Keycloak localmente com o seguinte comando:
+
+```bash
+docker-compose up
+```
+
+O Keycloak estará disponível em: http://localhost:8080
+
+Credenciais padrão:
+
+    Usuário: admin
+
+    Senha: admin
+
+
+
+
+
 ## Stack utilizada
 
 **Front-end:** Nuxt, Vue, TypeScript
