@@ -59,7 +59,7 @@ resource-server-api: API que contem os recursos a serem solicitados pelos client
 
 **Front-end:** Nuxt, Vue, TypeScript
 
-**Back-end:** Java, Spring Boot
+**Back-end:** Java, Spring Boot,
 
 
 ## Referência
