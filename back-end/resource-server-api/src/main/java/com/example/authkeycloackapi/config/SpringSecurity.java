@@ -54,7 +54,7 @@ public class SpringSecurity {
 
             Map<String, Object> resourceAccess = jwt.getClaim("resource_access");
             if (resourceAccess != null) {
-                Map<String, Object> client = (Map<String, Object>) resourceAccess.get("auth-keycloack-api");
+                Map<String, Object> client = (Map<String, Object>) resourceAccess.get("resource-serve-api");
                 if (client != null && client.get("roles") instanceof List<?> roles) {
                     for (Object role : roles) {
                         authorities.add(new SimpleGrantedAuthority("ROLES_" + role.toString()));
