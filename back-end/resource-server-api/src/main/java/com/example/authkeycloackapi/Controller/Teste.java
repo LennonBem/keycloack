@@ -26,10 +26,7 @@ public class Teste {
 
     @GetMapping("/public")
     String testeAcessoRecursoPublico(){
-        Map<String,String> retornoBancodeDados = new HashMap<>();
-        retornoBancodeDados.put("id","1");
-        retornoBancodeDados.put("nome","Banco 1");
-        return "Olá Matheus! " + retornoBancodeDados;
+        return "Endpoint publico acessado com sucesso!";
     }
 
     @GetMapping("/private")

@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("api/client")
-public class Teste {
+public class TesteController {
 
     final private ApiClient apiClient;
 
-    public Teste(ApiClient apiClient) {
+    public TesteController(ApiClient apiClient) {
         this.apiClient = apiClient;
     }
 
